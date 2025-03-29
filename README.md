@@ -34,3 +34,6 @@ To apply the patches, follow these steps:
 In this repository the source images I used are supplied. They are saved as .bmp files with the same encoding as the ones embedded in the original binaries. If you are to modify them, I highly recommend loading them in a copy of Windows XP's mspaint.exe and pasting your edits on top of it to save it. This will ensure it can be embedded properly. The program used to then modify the bitmaps in the binaries is Angus Johnson's Resource Hacker found here: https://www.angusj.com/resourcehacker/
 
 To apply the modified bitmap to the corresponding card you will use the action to replace .bmp or use the hotkey Ctrl + R and select the file you want to replace it with.
+
+# Why don't I see the cards loaded in wine?
+You will need to run winecfg within the prefix you are using for this, go to the "Libraries" tab, add a new override for the library "cards", and edit to to only use "Native (Windows)". The reason this happens is wine ships their own cards.dll with assets that are not copywritten and that takes priority like most modded wine libraries. Doing this tells it to use our modified dll instead.

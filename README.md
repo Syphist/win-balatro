@@ -1,6 +1,8 @@
 # Balatro Cards for Windows XP Card Games
 This mod is for the card games that shipped with Windows XP. The games Solitaire, Spider Solitaire, Hearts, and Free Cell all use the same bitmap format for card data and 3 of the 4 load this data in from cards.dll. These cards are made from the assets within Balatro and super imposed on the bitmaps the OS originally shipped with. The exes expect certain pixels at certain parts of the bitmap so they aren't the exact same look as the cards from Balatro, but it is as close as I could get without editing the executed code in the binaries. Due to this being a modded binary you will need to apply patches to a few of them to allow the mod to fully work.
 
+![A screenshot of Microsoft Solitaire from Windows XP running in wine. The cards have been edited to look like the cards from Balatro.](https://github.com/syphist/win-balatro/readmeimg/preview.png?raw=true)
+
 # Applying the patches
 To apply the patches, follow these steps:
 1. Clone or download the repo to have the 3 .bps files
